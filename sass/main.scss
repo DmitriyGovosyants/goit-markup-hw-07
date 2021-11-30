@@ -3,7 +3,6 @@
 // @import './utils/mixins';
 @import './base/global-styles';
 
-@import './components/common/container';
 @import './components/common/basic-layout';
 @import './components/common/logo';
 @import './components/common/button';
@@ -29,6 +28,6 @@
 @import './components/page-footer/join-us';
 @import './components/page-footer/subscribe';
 
-@import './components/common/backdrop';
-@import './components/common/callback-modal';
-@import './components/common/callback-form';
+@import './components/form/backdrop';
+@import './components/form/callback-modal';
+@import './components/form/callback-form';

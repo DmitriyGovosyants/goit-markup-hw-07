@@ -1,6 +1,14 @@
 /*=======================================================
 Basic Layout
 =======================================================*/
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
