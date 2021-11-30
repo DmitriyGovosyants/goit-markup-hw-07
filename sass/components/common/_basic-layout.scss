@@ -1,0 +1,38 @@
+/*=======================================================
+Basic Layout
+=======================================================*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--no-bt-padding {
+  padding-bottom: 0;
+}
+
+.section--bgd-color {
+  background-color: var(--background-tertiary);
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--title-secondary-color);
+  text-align: center;
+}
+
+.section__title--hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}

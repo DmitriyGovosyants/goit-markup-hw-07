@@ -1,0 +1,119 @@
+/*=======================================================
+  Callback-form
+=======================================================*/
+.callback-form {
+}
+
+.callback-form__field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.callback-form__field:not(:first-child) {
+  margin-top: 10px;
+}
+
+.callback-form__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+}
+
+.callback-form__input {
+  padding: 0 42px;
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  transition: border-color var(--animation-duration)
+    var(--animation-timing-function);
+}
+
+.callback-form__input:focus,
+.callback-form__comment:focus {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.callback-form__input:focus + .callback-form__icon {
+  fill: var(--accent-color);
+}
+
+.callback-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transition: fill var(--animation-duration) var(--animation-timing-function);
+}
+
+.callback-form__comment {
+  width: 100%;
+  padding: 11px 15px;
+
+  font-size: 12px;
+  line-height: 1.17;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  transition: border-color var(--animation-duration)
+    var(--animation-timing-function);
+  resize: none;
+}
+
+.callback-form__comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.callback-form__agreement-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  line-height: 1.71;
+  user-select: none;
+}
+
+.callback-form__agreement-chekbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.callback-form__agreement-chekbox:checked + .callback-form__agreement-icon {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-image: url('../images/agreement-ok.svg');
+  background-size: contain;
+}
+
+.callback-form__agreement-icon {
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid var(--text-secondary-color);
+  border-radius: 2px;
+}
+
+.callback-form__agreement-link {
+  text-decoration: underline;
+}

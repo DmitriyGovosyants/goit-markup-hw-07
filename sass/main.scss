@@ -1,6 +1,34 @@
 @import './utils/variables';
-@import './utils/visually-hidden';
-@import './utils/placeholders';
-@import './utils/mixins';
+// @import './utils/placeholders';
+// @import './utils/mixins';
 @import './base/global-styles';
-@import './components/?????';
+
+@import './components/common/container';
+@import './components/common/basic-layout';
+@import './components/common/logo';
+@import './components/common/button';
+@import './components/common/button-close';
+@import './components/common/button-filter';
+@import './components/common/socials-icons';
+
+@import './components/page-header/page-header';
+@import './components/page-header/site-nav';
+@import './components/page-header/contacts';
+
+@import './components/page-main-studio/hero-section';
+@import './components/page-main-studio/features-section';
+@import './components/page-main-studio/about-us-section';
+@import './components/page-main-studio/our-team-section';
+@import './components/page-main-studio/regular-clients-section';
+
+@import './components/page-main-portfolio/filter';
+@import './components/page-main-portfolio/portfolio';
+
+@import './components/page-footer/page-footer';
+@import './components/page-footer/address';
+@import './components/page-footer/join-us';
+@import './components/page-footer/subscribe';
+
+@import './components/common/backdrop';
+@import './components/common/callback-modal';
+@import './components/common/callback-form';
