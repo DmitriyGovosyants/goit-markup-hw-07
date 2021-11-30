@@ -161,6 +161,70 @@ Basic components
   background-color: var(--background-button-focus);
 }
 
+.button--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*=======================================================
+  Button-close
+=======================================================*/
+.button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  background-color: inherit;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: color var(--animation-duration) var(--animation-timing-function);
+  cursor: pointer;
+}
+
+.button-close:hover,
+.button-close:focus {
+  color: var(--accent-color);
+}
+
+.button-close__icon {
+  fill: currentColor;
+}
+
+/*=======================================================
+  Button-filter
+=======================================================*/
+.button-filter {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--text-secondary-color);
+
+  background-color: var(--background-tertiary);
+  border: 1px transparent;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: color var(--animation-duration) var(--animation-timing-function),
+    background-color var(--animation-duration) var(--animation-timing-function),
+    box-shadow var(--animation-duration) var(--animation-timing-function);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--text-tertiary-color);
+
+  background-color: var(--accent-color);
+  border: 1px transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 /*=======================================================
   Socials icons
 =======================================================*/
@@ -557,36 +621,6 @@ Basic components
   margin-left: 8px;
 }
 
-.filter-btn {
-  padding: 6px 22px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  color: var(--text-secondary-color);
-
-  background-color: var(--background-tertiary);
-  border: 1px transparent;
-  border-radius: 4px;
-
-  cursor: pointer;
-
-  transition: color var(--animation-duration) var(--animation-timing-function),
-    background-color var(--animation-duration) var(--animation-timing-function),
-    box-shadow var(--animation-duration) var(--animation-timing-function);
-}
-
-.filter-btn:hover,
-.filter-btn:focus {
-  color: var(--text-tertiary-color);
-
-  background-color: var(--accent-color);
-  border: 1px transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -604,25 +638,26 @@ Basic components
   margin-bottom: 30px;
 }
 
-.portfolio-link {
+.portfolio__link {
   display: block;
+  width: 100%;
 
   transition: box-shadow var(--animation-duration)
     var(--animation-timing-function);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-thumb {
+.portfolio__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-overlay {
+.portfolio__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -637,12 +672,12 @@ Basic components
     var(--animation-timing-function);
 }
 
-.portfolio-link:hover .portfolio-overlay,
-.portfolio-link:focus .portfolio-overlay {
+.portfolio__link:hover .portfolio__overlay,
+.portfolio__link:focus .portfolio__overlay {
   transform: translateY(0);
 }
 
-.portfolio-meta {
+.portfolio__meta {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -660,7 +695,7 @@ Basic components
   color: var(--text-tertiary-color);
 }
 
-.portfolio-text-wrap {
+.portfolio__text-wrap {
   padding: 20px 24px;
 
   border-bottom: 1px solid #eeeeee;
@@ -668,7 +703,7 @@ Basic components
   border-left: 1px solid #eeeeee;
 }
 
-.portfolio-title {
+.portfolio__title {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -678,7 +713,7 @@ Basic components
   color: var(--title-secondary-color);
 }
 
-.portfolio-text {
+.portfolio__text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -739,7 +774,7 @@ Basic components
   margin-left: 70px;
 }
 
-.join-us__text {
+.join-us__label {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -757,17 +792,18 @@ Basic components
   color: var(--text-tertiary-color);
 }
 
-.subscribe-email {
+.subscribe__email {
   display: flex;
   flex-direction: column;
   margin-right: 12px;
 }
 
-.subscribe-input {
+.subscribe__input {
   min-width: 358px;
   height: 50px;
   margin-top: 20px;
   padding-left: 16px;
+  padding-right: 16px;
 
   font-size: 16px;
   line-height: 1.25;
@@ -781,20 +817,14 @@ Basic components
 
   transition: border-color var(--animation-duration)
     var(--animation-timing-function);
+  outline: none;
 }
 
-.subscribe-input:focus {
+.subscribe__input:focus {
   border: 1px solid var(--accent-color);
-  outline: 0;
 }
 
-.subscribe-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.subscribe-icon {
+.subscribe__icon {
   margin-left: 10px;
 }
 
@@ -814,13 +844,13 @@ Basic components
     visibility var(--animation-duration) var(--animation-timing-function);
 }
 
-.is-hidden {
+.backdrop--hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.modal {
+.callback-modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -841,39 +871,11 @@ Basic components
     var(--animation-timing-function);
 }
 
-.is-hidden .modal {
+.backdrop--hidden .callback-modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-.modal-close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-
-  background-color: inherit;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-
-  transition: color var(--animation-duration) var(--animation-timing-function);
-  cursor: pointer;
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  color: var(--accent-color);
-}
-
-.modal-close-icon {
-  fill: currentColor;
-}
-
-.callback-title {
+.callback-modal__title {
   display: inline-block;
   margin-bottom: 12px;
 
@@ -884,7 +886,16 @@ Basic components
   color: var(--title-secondary-color);
 }
 
-.callback-field {
+.callback-modal__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.callback-form {
+}
+
+.callback-form__field {
   position: relative;
 
   display: flex;
@@ -892,40 +903,40 @@ Basic components
   align-items: flex-start;
 }
 
-.callback-field + .callback-field {
+.callback-form__field:not(:first-child) {
   margin-top: 10px;
 }
 
-.callback-label {
+.callback-form__label {
   margin-bottom: 4px;
   font-size: 12px;
   letter-spacing: 0.01em;
 }
 
-.callback-input {
+.callback-form__input {
   padding: 0 42px;
   width: 100%;
   height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: 0;
+  outline: none;
 
   transition: border-color var(--animation-duration)
     var(--animation-timing-function);
 }
 
-.callback-input:focus,
-.callback-comment:focus {
+.callback-form__input:focus,
+.callback-form__comment:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
-.callback-input:focus + .callback-icon {
+.callback-form__input:focus + .callback-form__icon {
   fill: var(--accent-color);
 }
 
-.callback-icon {
+.callback-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -933,7 +944,7 @@ Basic components
   transition: fill var(--animation-duration) var(--animation-timing-function);
 }
 
-.callback-comment {
+.callback-form__comment {
   width: 100%;
   padding: 11px 15px;
 
@@ -942,18 +953,18 @@ Basic components
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: 0;
+  outline: none;
 
   transition: border-color var(--animation-duration)
     var(--animation-timing-function);
   resize: none;
 }
 
-.callback-comment::placeholder {
+.callback-form__comment::placeholder {
   color: rgb(117, 117, 117, 0.5);
 }
 
-.agreement-field {
+.callback-form__agreement-field {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -964,7 +975,7 @@ Basic components
   user-select: none;
 }
 
-.agreement-checkbox {
+.callback-form__agreement-chekbox {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -977,14 +988,14 @@ Basic components
   margin: -1px;
 }
 
-.agreement-checkbox:checked + .agreement-icon {
+.callback-form__agreement-chekbox:checked + .callback-form__agreement-icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   background-image: url('../images/agreement-ok.svg');
   background-size: contain;
 }
 
-.agreement-icon {
+.callback-form__agreement-icon {
   display: block;
   width: 16px;
   height: 15px;
@@ -994,6 +1005,6 @@ Basic components
   border-radius: 2px;
 }
 
-.agreement-link {
+.callback-form__agreement-link {
   text-decoration: underline;
 }
