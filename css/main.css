@@ -46,7 +46,7 @@ img {
 }
 
 /*=======================================================
-Basic Layout
+Base Layout
 =======================================================*/
 .container {
   width: 1200px;
@@ -134,8 +134,7 @@ Basic Layout
   cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: #188ce8;
 }
 
@@ -174,8 +173,7 @@ Basic Layout
   cursor: pointer;
 }
 
-.button-close:hover,
-.button-close:focus {
+.button-close:hover, .button-close:focus {
   color: #2196f3;
 }
 
@@ -203,8 +201,7 @@ Basic Layout
   transition: color var(--animation-duration) var(--animation-timing-function), background-color var(--animation-duration) var(--animation-timing-function), box-shadow var(--animation-duration) var(--animation-timing-function), -webkit-box-shadow var(--animation-duration) var(--animation-timing-function);
 }
 
-.button-filter:hover,
-.button-filter:focus {
+.button-filter:hover, .button-filter:focus {
   color: #ffffff;
   background-color: #2196f3;
   border: 1px transparent;
@@ -253,8 +250,7 @@ Basic Layout
   transition: color var(--animation-duration) var(--animation-timing-function), background-color var(--animation-duration) var(--animation-timing-function);
 }
 
-.socials__link:hover,
-.socials__link:focus {
+.socials__link:hover, .socials__link:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -266,8 +262,7 @@ Basic Layout
   transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
 
-.socials__link--light:hover,
-.socials__link--light:focus {
+.socials__link--light:hover, .socials__link--light:focus {
   background-color: #2196f3;
 }
 
@@ -355,8 +350,7 @@ Basic Layout
   border-radius: 2px;
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
 }
 
@@ -383,8 +377,8 @@ Basic Layout
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: inherit;
@@ -392,8 +386,7 @@ Basic Layout
   transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
 }
 
@@ -479,7 +472,7 @@ Basic Layout
 }
 
 /*=======================================================
-    About us section
+    About section
 =======================================================*/
 .about {
   display: -webkit-box;
@@ -522,7 +515,7 @@ Basic Layout
 }
 
 /*=======================================================
-    Our team section
+    Team section
 =======================================================*/
 .team {
   display: -webkit-box;
@@ -564,7 +557,7 @@ Basic Layout
 }
 
 /*=======================================================
-    Regular clients section
+    Clients section
 =======================================================*/
 .clients {
   display: -webkit-box;
@@ -601,8 +594,7 @@ Basic Layout
   transition: color var(--animation-duration) var(--animation-timing-function), border-color var(--animation-duration) var(--animation-timing-function);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   color: #2196f3;
   border-color: #2196f3;
 }
@@ -624,7 +616,7 @@ Basic Layout
   margin-bottom: 50px;
 }
 
-.filter__item:not(:first-child) {
+.filter:not(:first-child) {
   margin-left: 8px;
 }
 
@@ -661,8 +653,7 @@ Basic Layout
   transition: box-shadow var(--animation-duration) var(--animation-timing-function), -webkit-box-shadow var(--animation-duration) var(--animation-timing-function);
 }
 
-.portfolio__link:hover,
-.portfolio__link:focus {
+.portfolio__link:hover, .portfolio__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -769,24 +760,23 @@ Basic Layout
   margin-top: 9px;
 }
 
-.address__link,
-.address__contact {
+.address__link {
+  color: #ffffff;
   -webkit-transition: color var(--animation-duration) var(--animation-timing-function);
   transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
-.address__link {
-  color: #ffffff;
+.address__link:hover, .address__link:focus {
+  color: #2196f3;
 }
 
 .address__contact {
   color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color var(--animation-duration) var(--animation-timing-function);
+  transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
-.address__contact:hover,
-.address__contact:focus,
-.address__link:hover,
-.address__link:focus {
+.address__contact:hover, .address__contact:focus {
   color: #2196f3;
 }
 
@@ -961,14 +951,9 @@ Basic Layout
   transition: border-color var(--animation-duration) var(--animation-timing-function);
 }
 
-.callback-form__input:focus,
-.callback-form__comment:focus {
+.callback-form__input:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
-}
-
-.callback-form__input:focus + .callback-form__icon {
-  fill: #2196f3;
 }
 
 .callback-form__icon {
@@ -977,6 +962,10 @@ Basic Layout
   left: 12px;
   -webkit-transition: fill var(--animation-duration) var(--animation-timing-function);
   transition: fill var(--animation-duration) var(--animation-timing-function);
+}
+
+.callback-form__input:focus + .callback-form__icon {
+  fill: #2196f3;
 }
 
 .callback-form__comment {
@@ -1006,6 +995,11 @@ Basic Layout
 
 .callback-form__comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.callback-form__comment:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 .callback-form__agreement-field {
@@ -1041,13 +1035,6 @@ Basic Layout
   margin: -1px;
 }
 
-.callback-form__agreement-chekbox:checked + .callback-form__agreement-icon {
-  background-color: #2196f3;
-  border-color: #2196f3;
-  background-image: url("../images/agreement-ok.svg");
-  background-size: contain;
-}
-
 .callback-form__agreement-icon {
   display: block;
   width: 16px;
@@ -1055,6 +1042,13 @@ Basic Layout
   margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 2px;
+}
+
+.callback-form__agreement-chekbox:checked + .callback-form__agreement-icon {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  background-image: url("../images/agreement-ok.svg");
+  background-size: contain;
 }
 
 .callback-form__agreement-link {

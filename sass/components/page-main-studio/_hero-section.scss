@@ -32,7 +32,7 @@
   font-weight: $fw-xl;
   font-size: $fs-4xl;
   line-height: 1.36;
-  letter-spacing: 0.06em;
+  letter-spacing: $ls-l;
   text-transform: uppercase;
   color: getColor('title-secondary');
 }

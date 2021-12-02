@@ -1,5 +1,5 @@
 /*=======================================================
-Basic Layout
+Base Layout
 =======================================================*/
 .container {
   width: 1200px;
@@ -12,14 +12,14 @@ Basic Layout
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.section--no-bt-padding {
-  padding-bottom: 0;
-}
+  &--no-bt-padding {
+    padding-bottom: 0;
+  }
 
-.section--bgd-color {
-  background-color: getColor('bgd-tertiary');
+  &--bgd-color {
+    background-color: getColor('bgd-tertiary');
+  }
 }
 
 .section__title {
@@ -30,17 +30,17 @@ Basic Layout
   letter-spacing: $ls-m;
   color: getColor('title-primary');
   text-align: center;
-}
 
-.section__title--hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+  &--hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 }

@@ -9,10 +9,10 @@
 .socials__item {
   width: 44px;
   height: 44px;
-}
 
-.socials__item:not(:first-child) {
-  margin-left: 10px;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
 }
 
 .socials__link {
@@ -31,27 +31,27 @@
 
   transition: color var(--animation-duration) var(--animation-timing-function),
     background-color var(--animation-duration) var(--animation-timing-function);
-}
 
-.socials__link:hover,
-.socials__link:focus {
-  color: getColor('bgd-primary');
+  &:hover,
+  &:focus {
+    color: getColor('bgd-primary');
 
-  background-color: getColor('accent');
-}
+    background-color: getColor('accent');
+  }
 
-.socials__link--light {
-  color: getColor('bgd-primary');
+  &--light {
+    color: getColor('bgd-primary');
 
-  background-color: getColor('bgd-socials-light');
+    background-color: getColor('bgd-socials-light');
 
-  transition: background-color var(--animation-duration)
-    var(--animation-timing-function);
-}
+    transition: background-color var(--animation-duration)
+      var(--animation-timing-function);
+  }
 
-.socials__link--light:hover,
-.socials__link--light:focus {
-  background-color: getColor('accent');
+  &--light:hover,
+  &--light:focus {
+    background-color: getColor('accent');
+  }
 }
 
 .socials__icon {

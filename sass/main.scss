@@ -3,7 +3,7 @@
 // @import './utils/mixins';
 @import './base/global-styles';
 
-@import './components/common/basic-layout';
+@import './components/common/base-layout';
 @import './components/common/logo';
 @import './components/common/button';
 @import './components/common/button-close';
@@ -16,9 +16,9 @@
 
 @import './components/page-main-studio/hero-section';
 @import './components/page-main-studio/features-section';
-@import './components/page-main-studio/about-us-section';
-@import './components/page-main-studio/our-team-section';
-@import './components/page-main-studio/regular-clients-section';
+@import './components/page-main-studio/about-section';
+@import './components/page-main-studio/team-section';
+@import './components/page-main-studio/clients-section';
 
 @import './components/page-main-portfolio/filter';
 @import './components/page-main-portfolio/portfolio';

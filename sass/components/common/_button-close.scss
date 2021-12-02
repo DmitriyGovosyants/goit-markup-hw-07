@@ -14,11 +14,11 @@
 
   transition: color var(--animation-duration) var(--animation-timing-function);
   cursor: pointer;
-}
 
-.button-close:hover,
-.button-close:focus {
-  color: getColor('accent');
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
 }
 
 .button-close__icon {

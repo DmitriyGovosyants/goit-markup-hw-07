@@ -11,8 +11,8 @@
 
 .logo__second-part {
   color: getColor('logo-primary');
-}
 
-.logo__second-part--light {
-  color: getColor('logo-secondary');
+  &--light {
+    color: getColor('logo-secondary');
+  }
 }

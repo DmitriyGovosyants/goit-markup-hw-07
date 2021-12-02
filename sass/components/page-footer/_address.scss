@@ -9,28 +9,30 @@
   font-style: normal;
   line-height: 1.71;
   color: inherit;
-}
 
-.address__item:not(:first-child) {
-  margin-top: 9px;
-}
-
-.address__link,
-.address__contact {
-  transition: color var(--animation-duration) var(--animation-timing-function);
+  &:not(:first-child) {
+    margin-top: 9px;
+  }
 }
 
 .address__link {
   color: getColor('text-tertiary');
+
+  transition: color var(--animation-duration) var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
 }
 
 .address__contact {
   color: rgba(255, 255, 255, 0.6);
-}
 
-.address__contact:hover,
-.address__contact:focus,
-.address__link:hover,
-.address__link:focus {
-  color: getColor('accent');
+  transition: color var(--animation-duration) var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
 }

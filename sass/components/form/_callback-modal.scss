@@ -20,10 +20,10 @@
 
   transition: transform var(--animation-duration)
     var(--animation-timing-function);
-}
 
-.backdrop--hidden .callback-modal {
-  transform: translate(-50%, -50%) scale(1.1);
+  .backdrop--hidden & {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }
 
 .callback-modal__title {

@@ -11,7 +11,7 @@
   font-weight: $fw-l;
   font-size: $fs-m;
   line-height: 1.87;
-  letter-spacing: 0.06em;
+  letter-spacing: $ls-l;
   color: getColor('text-tertiary');
 
   background-color: getColor('accent');
@@ -22,15 +22,15 @@
   transition: background-color var(--animation-duration)
     var(--animation-timing-function);
   cursor: pointer;
-}
 
-.button:hover,
-.button:focus {
-  background-color: getColor('bgd-button-focus');
-}
+  &:hover,
+  &:focus {
+    background-color: getColor('bgd-button-focus');
+  }
 
-.button--flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -10,10 +10,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
 
-.callback-form__field:not(:first-child) {
-  margin-top: 10px;
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
 }
 
 .callback-form__label {
@@ -33,16 +33,11 @@
 
   transition: border-color var(--animation-duration)
     var(--animation-timing-function);
-}
 
-.callback-form__input:focus,
-.callback-form__comment:focus {
-  border: 1px solid getColor('accent');
-  border-radius: 4px;
-}
-
-.callback-form__input:focus + .callback-form__icon {
-  fill: getColor('accent');
+  &:focus {
+    border: 1px solid getColor('accent');
+    border-radius: 4px;
+  }
 }
 
 .callback-form__icon {
@@ -51,6 +46,10 @@
   left: 12px;
 
   transition: fill var(--animation-duration) var(--animation-timing-function);
+
+  .callback-form__input:focus + & {
+    fill: getColor('accent');
+  }
 }
 
 .callback-form__comment {
@@ -67,10 +66,15 @@
   transition: border-color var(--animation-duration)
     var(--animation-timing-function);
   resize: none;
-}
 
-.callback-form__comment::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    border: 1px solid getColor('accent');
+    border-radius: 4px;
+  }
 }
 
 .callback-form__agreement-field {
@@ -97,13 +101,6 @@
   margin: -1px;
 }
 
-.callback-form__agreement-chekbox:checked + .callback-form__agreement-icon {
-  background-color: getColor('accent');
-  border-color: getColor('accent');
-  background-image: url('../images/agreement-ok.svg');
-  background-size: contain;
-}
-
 .callback-form__agreement-icon {
   display: block;
   width: 16px;
@@ -112,6 +109,13 @@
 
   border: 2px solid getColor('text-secondary');
   border-radius: 2px;
+
+  .callback-form__agreement-chekbox:checked + & {
+    background-color: getColor('accent');
+    border-color: getColor('accent');
+    background-image: url('../images/agreement-ok.svg');
+    background-size: contain;
+  }
 }
 
 .callback-form__agreement-link {

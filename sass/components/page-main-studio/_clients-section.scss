@@ -1,5 +1,5 @@
 /*=======================================================
-    Regular clients section
+    Clients section
 =======================================================*/
 .clients {
   display: flex;
@@ -8,10 +8,10 @@
 .clients__item {
   flex-basis: calc((100% - 150px) / 6);
   height: 92px;
-}
 
-.clients__item:not(:first-child) {
-  margin-left: 30px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .clients__link {
@@ -29,13 +29,13 @@
 
   transition: color var(--animation-duration) var(--animation-timing-function),
     border-color var(--animation-duration) var(--animation-timing-function);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  color: getColor('accent');
+  &:hover,
+  &:focus {
+    color: getColor('accent');
 
-  border-color: getColor('accent');
+    border-color: getColor('accent');
+  }
 }
 
 .clients__icon {

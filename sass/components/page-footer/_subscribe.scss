@@ -37,10 +37,10 @@
   transition: border-color var(--animation-duration)
     var(--animation-timing-function);
   outline: none;
-}
 
-.subscribe__input:focus {
-  border: 1px solid getColor('accent');
+  &:focus {
+    border: 1px solid getColor('accent');
+  }
 }
 
 .subscribe__icon {
