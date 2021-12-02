@@ -6,9 +6,9 @@ body {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--text-primary-color);
+  color: getColor('text-primary');
 
-  background-color: var(--background-primary);
+  background-color: getColor('bgd-primary');
 }
 
 h1,

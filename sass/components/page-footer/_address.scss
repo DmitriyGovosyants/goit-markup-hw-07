@@ -21,7 +21,7 @@
 }
 
 .address__link {
-  color: var(--text-tertiary-color);
+  color: getColor('text-tertiary');
 }
 
 .address__contact {
@@ -32,5 +32,5 @@
 .address__contact:focus,
 .address__link:hover,
 .address__link:focus {
-  color: var(--accent-color);
+  color: getColor('accent');
 }

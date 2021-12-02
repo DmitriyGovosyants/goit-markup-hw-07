@@ -72,7 +72,7 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
 
-  color: var(--text-tertiary-color);
+  color: getColor('text-tertiary');
 }
 
 .portfolio__text-wrap {
@@ -90,12 +90,12 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-secondary-color);
+  color: getColor('title-primary');
 }
 
 .portfolio__text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--text-primary-color);
+  color: getColor('text-primary');
 }

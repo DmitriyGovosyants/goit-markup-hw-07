@@ -10,5 +10,5 @@
 
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--text-tertiary-color);
+  color: getColor('text-tertiary');
 }

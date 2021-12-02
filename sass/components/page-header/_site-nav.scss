@@ -25,13 +25,13 @@
 
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--text-secondary-color);
+  color: getColor('text-secondary');
 
   transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
 .site-nav__link--active {
-  color: var(--accent-color);
+  color: getColor('accent');
 }
 
 .site-nav__link--active::after {
@@ -43,11 +43,11 @@
   width: 100%;
   height: 4px;
 
-  background-color: var(--accent-color);
+  background-color: getColor('accent');
   border-radius: 2px;
 }
 
 .site-nav__link:hover,
 .site-nav__link:focus {
-  color: var(--accent-color);
+  color: getColor('accent');
 }

@@ -3,18 +3,6 @@
 Variable
 =======================================================*/
 :root {
-  --title-primary-color: #ffffff;
-  --title-secondary-color: #212121;
-  --text-primary-color: #757575;
-  --text-secondary-color: #212121;
-  --text-tertiary-color: #ffffff;
-  --accent-color: #2196f3;
-  --icon-primary-color: #afb1b8;
-  --background-primary: #ffffff;
-  --background-secondary: #2f303a;
-  --background-tertiary: #f5f4fa;
-  --background-button-focus: #188ce8;
-  --background-footer-social: rgba(255, 255, 255, 0.1);
   --animation-duration: 250ms;
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -27,8 +15,8 @@ body {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--text-primary-color);
-  background-color: var(--background-primary);
+  color: #757575;
+  background-color: #ffffff;
 }
 
 h1,
@@ -78,7 +66,7 @@ Basic Layout
 }
 
 .section--bgd-color {
-  background-color: var(--background-tertiary);
+  background-color: #f5f4fa;
 }
 
 .section__title {
@@ -86,7 +74,7 @@ Basic Layout
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
-  color: var(--title-secondary-color);
+  color: #212121;
   text-align: center;
 }
 
@@ -112,7 +100,7 @@ Basic Layout
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .logo__second-part {
@@ -135,8 +123,8 @@ Basic Layout
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--text-tertiary-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   border: 1px transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -148,7 +136,7 @@ Basic Layout
 
 .button:hover,
 .button:focus {
-  background-color: var(--background-button-focus);
+  background-color: #188ce8;
 }
 
 .button--flex {
@@ -188,7 +176,7 @@ Basic Layout
 
 .button-close:hover,
 .button-close:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .button-close__icon {
@@ -204,8 +192,8 @@ Basic Layout
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  color: var(--text-secondary-color);
-  background-color: var(--background-tertiary);
+  color: #212121;
+  background-color: #f5f4fa;
   border: 1px transparent;
   border-radius: 4px;
   cursor: pointer;
@@ -217,8 +205,8 @@ Basic Layout
 
 .button-filter:hover,
 .button-filter:focus {
-  color: var(--text-tertiary-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   border: 1px transparent;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -257,8 +245,8 @@ Basic Layout
           align-items: center;
   width: 100%;
   height: 100%;
-  color: var(--icon-primary-color);
-  background-color: var(--background-primary);
+  color: #afb1b8;
+  background-color: #ffffff;
   border: none;
   border-radius: 50%;
   -webkit-transition: color var(--animation-duration) var(--animation-timing-function), background-color var(--animation-duration) var(--animation-timing-function);
@@ -267,20 +255,20 @@ Basic Layout
 
 .socials__link:hover,
 .socials__link:focus {
-  color: var(--background-primary);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .socials__link--light {
-  color: var(--background-primary);
-  background-color: var(--background-footer-social);
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: background-color var(--animation-duration) var(--animation-timing-function);
   transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
 
 .socials__link--light:hover,
 .socials__link--light:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .socials__icon {
@@ -347,13 +335,13 @@ Basic Layout
   padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--text-secondary-color);
+  color: #212121;
   -webkit-transition: color var(--animation-duration) var(--animation-timing-function);
   transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
 .site-nav__link--active {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .site-nav__link--active::after {
@@ -363,13 +351,13 @@ Basic Layout
   bottom: -1px;
   width: 100%;
   height: 4px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   border-radius: 2px;
 }
 
 .site-nav__link:hover,
 .site-nav__link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 /*=======================================================
@@ -406,7 +394,7 @@ Basic Layout
 
 .contacts__link:hover,
 .contacts__link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .contacts__icon {
@@ -424,7 +412,7 @@ Basic Layout
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--background-secondary);
+  background-color: #2f303a;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
@@ -442,7 +430,7 @@ Basic Layout
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--title-primary-color);
+  color: #ffffff;
 }
 
 /*=======================================================
@@ -477,7 +465,7 @@ Basic Layout
   width: 100%;
   height: 120px;
   margin-bottom: 30px;
-  background-color: var(--background-tertiary);
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
 
@@ -487,7 +475,7 @@ Basic Layout
   font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
-  color: var(--title-secondary-color);
+  color: #212121;
 }
 
 /*=======================================================
@@ -529,7 +517,7 @@ Basic Layout
   height: 70px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--text-tertiary-color);
+  color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -548,7 +536,7 @@ Basic Layout
 .team__item {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
       flex-basis: calc((100% - 90px) / 4);
-  background-color: var(--background-primary);
+  background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -568,7 +556,7 @@ Basic Layout
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
-  color: var(--title-secondary-color);
+  color: #212121;
 }
 
 .team__position {
@@ -606,8 +594,8 @@ Basic Layout
           align-items: center;
   width: 100%;
   height: 100%;
-  color: var(--icon-primary-color);
-  border: 1px solid var(--icon-primary-color);
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   -webkit-transition: color var(--animation-duration) var(--animation-timing-function), border-color var(--animation-duration) var(--animation-timing-function);
   transition: color var(--animation-duration) var(--animation-timing-function), border-color var(--animation-duration) var(--animation-timing-function);
@@ -615,8 +603,8 @@ Basic Layout
 
 .clients__link:hover,
 .clients__link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: #2196f3;
+  border-color: #2196f3;
 }
 
 .clients__icon {
@@ -720,7 +708,7 @@ Basic Layout
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: var(--text-tertiary-color);
+  color: #ffffff;
 }
 
 .portfolio__text-wrap {
@@ -736,14 +724,14 @@ Basic Layout
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-secondary-color);
+  color: #212121;
 }
 
 .portfolio__text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--text-primary-color);
+  color: #757575;
 }
 
 /*=======================================================
@@ -752,7 +740,7 @@ Basic Layout
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--background-secondary);
+  background-color: #2f303a;
 }
 
 .page-footer__container {
@@ -788,7 +776,7 @@ Basic Layout
 }
 
 .address__link {
-  color: var(--text-tertiary-color);
+  color: #ffffff;
 }
 
 .address__contact {
@@ -799,7 +787,7 @@ Basic Layout
 .address__contact:focus,
 .address__link:hover,
 .address__link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 /*=======================================================
@@ -813,7 +801,7 @@ Basic Layout
   margin-bottom: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--text-tertiary-color);
+  color: #ffffff;
 }
 
 /*=======================================================
@@ -829,7 +817,7 @@ Basic Layout
   margin-left: auto;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--text-tertiary-color);
+  color: #ffffff;
 }
 
 .subscribe__email {
@@ -853,7 +841,7 @@ Basic Layout
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background-color: var(--background-secondary);
+  background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -864,7 +852,7 @@ Basic Layout
 }
 
 .subscribe__input:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid #2196f3;
 }
 
 .subscribe__icon {
@@ -904,7 +892,7 @@ Basic Layout
   min-height: 581px;
   padding: 40px;
   text-align: center;
-  background: var(--background-primary);
+  background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -926,7 +914,7 @@ Basic Layout
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  color: var(--title-secondary-color);
+  color: #212121;
 }
 
 .callback-modal__button-close {
@@ -975,12 +963,12 @@ Basic Layout
 
 .callback-form__input:focus,
 .callback-form__comment:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid #2196f3;
   border-radius: 4px;
 }
 
 .callback-form__input:focus + .callback-form__icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .callback-form__icon {
@@ -1054,8 +1042,8 @@ Basic Layout
 }
 
 .callback-form__agreement-chekbox:checked + .callback-form__agreement-icon {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: #2196f3;
+  border-color: #2196f3;
   background-image: url("../images/agreement-ok.svg");
   background-size: contain;
 }
@@ -1065,7 +1053,7 @@ Basic Layout
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  border: 2px solid var(--text-secondary-color);
+  border: 2px solid #212121;
   border-radius: 2px;
 }
 

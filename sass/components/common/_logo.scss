@@ -6,13 +6,13 @@
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: getColor('accent');
 }
 
 .logo__second-part {
-  color: #000000;
+  color: getColor('logo-primary');
 }
 
 .logo__second-part--light {
-  color: #ffffff;
+  color: getColor('logo-secondary');
 }

@@ -19,7 +19,7 @@ Basic Layout
 }
 
 .section--bgd-color {
-  background-color: var(--background-tertiary);
+  background-color: getColor('bgd-tertiary');
 }
 
 .section__title {
@@ -28,7 +28,7 @@ Basic Layout
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
-  color: var(--title-secondary-color);
+  color: getColor('title-primary');
   text-align: center;
 }
 

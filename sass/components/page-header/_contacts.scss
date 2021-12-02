@@ -25,7 +25,7 @@
 
 .contacts__link:hover,
 .contacts__link:focus {
-  color: var(--accent-color);
+  color: getColor('accent');
 }
 
 .contacts__icon {

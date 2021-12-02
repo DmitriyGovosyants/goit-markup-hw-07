@@ -37,12 +37,12 @@
 
 .callback-form__input:focus,
 .callback-form__comment:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid getColor('accent');
   border-radius: 4px;
 }
 
 .callback-form__input:focus + .callback-form__icon {
-  fill: var(--accent-color);
+  fill: getColor('accent');
 }
 
 .callback-form__icon {
@@ -98,8 +98,8 @@
 }
 
 .callback-form__agreement-chekbox:checked + .callback-form__agreement-icon {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: getColor('accent');
+  border-color: getColor('accent');
   background-image: url('../images/agreement-ok.svg');
   background-size: contain;
 }
@@ -110,7 +110,7 @@
   height: 15px;
   margin-right: 8px;
 
-  border: 2px solid var(--text-secondary-color);
+  border: 2px solid getColor('text-secondary');
   border-radius: 2px;
 }
 
