@@ -564,6 +564,7 @@ Base Layout
 
 .filter__item:not(:first-child) {
   margin-left: 8px;
+  margin-right: 10px;
 }
 
 /*=======================================================
