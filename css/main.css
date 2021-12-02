@@ -7,6 +7,18 @@ Variable
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button--flex, .button-close, .socials, .socials__link, .features__icon, .about__text, .clients__link, .callback-form__agreement-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /*=======================================================
 Basic Elements
 =======================================================*/
@@ -138,31 +150,10 @@ Base Layout
   background-color: #188ce8;
 }
 
-.button--flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 /*=======================================================
   Button-close
 =======================================================*/
 .button-close {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 30px;
   height: 30px;
   background-color: inherit;
@@ -212,15 +203,6 @@ Base Layout
 /*=======================================================
   Socials icons
 =======================================================*/
-.socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .socials__item {
   width: 44px;
   height: 44px;
@@ -231,15 +213,6 @@ Base Layout
 }
 
 .socials__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   height: 100%;
   color: #afb1b8;
@@ -446,15 +419,6 @@ Base Layout
 }
 
 .features__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   height: 120px;
   margin-bottom: 30px;
@@ -497,15 +461,6 @@ Base Layout
   position: absolute;
   left: 0;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   height: 70px;
   font-weight: 700;
@@ -576,15 +531,6 @@ Base Layout
 }
 
 .clients__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   height: 100%;
   color: #afb1b8;
@@ -1003,15 +949,6 @@ Base Layout
 }
 
 .callback-form__agreement-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
   line-height: 1.71;

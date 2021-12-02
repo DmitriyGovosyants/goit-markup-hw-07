@@ -1,5 +1,5 @@
 @import './utils/variables';
-// @import './utils/placeholders';
+@import './utils/placeholders';
 // @import './utils/mixins';
 @import './base/global-styles';
 
@@ -8,7 +8,7 @@
 @import './components/common/button';
 @import './components/common/button-close';
 @import './components/common/button-filter';
-@import './components/common/socials-icons';
+@import './components/common/socials';
 
 @import './components/page-header/page-header';
 @import './components/page-header/site-nav';
