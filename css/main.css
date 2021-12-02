@@ -563,7 +563,7 @@ Base Layout
 }
 
 .filter__item:not(:first-child) {
-  margin-left: 8px;
+  margin-left: 108px;
 }
 
 /*=======================================================
