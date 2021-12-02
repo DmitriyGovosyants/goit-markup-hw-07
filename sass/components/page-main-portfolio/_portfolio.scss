@@ -68,9 +68,9 @@
   padding-right: 24px;
   padding-left: 24px;
 
-  font-size: 18px;
+  font-size: $fs-l;
   line-height: 1.56;
-  letter-spacing: 0.03em;
+  letter-spacing: $ls-m;
 
   color: getColor('text-tertiary');
 }
@@ -86,16 +86,16 @@
 .portfolio__title {
   margin-bottom: 4px;
 
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: $fw-l;
+  font-size: $fs-l;
   line-height: 2;
   letter-spacing: 0.06em;
   color: getColor('title-primary');
 }
 
 .portfolio__text {
-  font-size: 16px;
+  font-size: $fs-m;
   line-height: 1.87;
-  letter-spacing: 0.03em;
+  letter-spacing: $ls-m;
   color: getColor('text-primary');
 }

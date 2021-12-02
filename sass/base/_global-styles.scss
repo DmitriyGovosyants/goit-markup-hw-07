@@ -3,9 +3,9 @@ Basic Elements
 =======================================================*/
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: $fs-s;
   line-height: 1.17;
-  letter-spacing: 0.03em;
+  letter-spacing: $ls-m;
   color: getColor('text-primary');
 
   background-color: getColor('bgd-primary');

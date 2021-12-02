@@ -16,8 +16,8 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-weight: $fw-m;
+  letter-spacing: $ls-s;
   color: inherit;
 
   transition: color var(--animation-duration) var(--animation-timing-function);

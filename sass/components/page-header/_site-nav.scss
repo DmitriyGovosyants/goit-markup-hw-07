@@ -23,8 +23,8 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-weight: $fw-m;
+  letter-spacing: $ls-s;
   color: getColor('text-secondary');
 
   transition: color var(--animation-duration) var(--animation-timing-function);

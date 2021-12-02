@@ -6,7 +6,7 @@
   align-items: flex-end;
   margin-left: auto;
 
-  font-weight: 700;
+  font-weight: $fw-l;
   text-transform: uppercase;
   color: getColor('text-tertiary');
 }
@@ -24,9 +24,9 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  font-size: 16px;
+  font-size: $fs-m;
   line-height: 1.25;
-  letter-spacing: 0.03em;
+  letter-spacing: $ls-m;
   color: rgba(255, 255, 255, 0.6);
 
   background-color: getColor('bgd-secondary');

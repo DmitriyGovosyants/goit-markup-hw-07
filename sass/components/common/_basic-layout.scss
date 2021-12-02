@@ -25,9 +25,9 @@ Basic Layout
 .section__title {
   margin-bottom: 50px;
 
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
+  font-weight: $fw-l;
+  font-size: $fs-3xl;
+  letter-spacing: $ls-m;
   color: getColor('title-primary');
   text-align: center;
 }
