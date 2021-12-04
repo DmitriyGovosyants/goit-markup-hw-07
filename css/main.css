@@ -863,7 +863,6 @@ Base Layout
   Callback-form
 =======================================================*/
 .callback-form__field {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -874,22 +873,24 @@ Base Layout
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  font-size: 12px;
+  letter-spacing: 0.01em;
 }
 
 .callback-form__field:not(:first-child) {
   margin-top: 10px;
 }
 
-.callback-form__label {
-  margin-bottom: 4px;
-  font-size: 12px;
-  letter-spacing: 0.01em;
+.callback-form__inner {
+  position: relative;
+  width: 100%;
+  margin-top: 4px;
 }
 
 .callback-form__input {
-  padding: 0 42px;
   width: 100%;
   height: 40px;
+  padding: 0 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -906,6 +907,8 @@ Base Layout
   position: absolute;
   top: 50%;
   left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: fill var(--animation-duration) var(--animation-timing-function);
   transition: fill var(--animation-duration) var(--animation-timing-function);
 }
@@ -916,6 +919,7 @@ Base Layout
 
 .callback-form__comment {
   width: 100%;
+  margin-top: 4px;
   padding: 11px 15px;
   font-size: 12px;
   line-height: 1.17;
@@ -988,7 +992,12 @@ Base Layout
   background-size: contain;
 }
 
+.callback-form__agreement-chekbox:focus + .callback-form__agreement-icon {
+  border: 2px solid #2196f3;
+}
+
 .callback-form__agreement-link {
+  margin-left: 5px;
   text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
