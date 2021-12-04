@@ -371,7 +371,7 @@ Base Layout
 /*=======================================================
     Hero section
 =======================================================*/
-.hero-section {
+.hero {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
@@ -386,7 +386,7 @@ Base Layout
   background-size: cover;
 }
 
-.hero-section__title {
+.hero__title {
   width: 59%;
   margin-right: auto;
   margin-left: auto;
