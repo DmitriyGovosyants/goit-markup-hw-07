@@ -7,7 +7,7 @@ Variable
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button--flex, .button-close, .socials, .socials__link, .features__icon, .about__text, .clients__link, .callback-form__agreement-field {
+.button--flex, .button-close, .socials, .socials__link, .features__inner, .about__text, .clients__link, .callback-form__agreement-field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,7 +418,7 @@ Base Layout
   margin-left: 30px;
 }
 
-.features__icon {
+.features__inner {
   width: 100%;
   height: 120px;
   margin-bottom: 30px;
@@ -507,7 +507,7 @@ Base Layout
   color: #212121;
 }
 
-.team__occupation {
+.team__text {
   margin-bottom: 16px;
 }
 
